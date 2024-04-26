@@ -79,6 +79,10 @@ def get_course_files(course):
                         file.download(path + sanitize_filename(file.filename))
                     except ResourceDoesNotExist:
                         pass
+                    except Unauthorized:
+                        pass
+                    except Forbidden:
+                        pass
 
     try:
         files = course.get_files()
