@@ -11,8 +11,9 @@ has downloaded all the resources from Canvas!
 
 2. Often professors will embed videos that require authentication to view, etc.
 At time of writing, this script does not handle such embeds.
-Please make sure you can view all resources offline without connecting to a server
-before calling your import done.
+Please make sure you can view all resources without authentication before
+considering the export done
+.
 
 # Docker
 A Docker image is provided for convenience. You can configure it to write to a
