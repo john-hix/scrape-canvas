@@ -6,7 +6,7 @@ import re
 from pathvalidate import sanitize_filename
 from canvasapi import Canvas
 from canvasapi.course import Course
-from canvasapi.exceptions import Unauthorized, ResourceDoesNotExist
+from canvasapi.exceptions import Unauthorized, ResourceDoesNotExist, Forbidden
 from canvasapi.file import File
 from canvasapi.module import Module, ModuleItem
 
@@ -90,6 +90,8 @@ def get_course_files(course):
                     f"{sanitize_filename(file.filename)}"
                 file.download(path)
     except Unauthorized:
+        pass
+    except Forbidden:
         pass
 
 
