@@ -26,7 +26,7 @@ mount it to the Docker container, perform the following commands:
 docker run \
   -u "$(id -u)" \
   -v "$(pwd)"/data:/usr/src/app/data \
-  johnhix/scrape-canvas:0.0.2 \
+  johnhix/scrape-canvas:0.0.3 \
   https://institution.canvas-address.edu \
   canvas-api-key \
   ./data \
