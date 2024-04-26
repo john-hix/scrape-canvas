@@ -2,7 +2,14 @@
 Forked from [Koenvh1](https://gist.github.com/Koenvh1/6386f8703766c432eb4dfa19acdb0244)
 
 # Please double-check the data
-Often professors will embed videos that require authentication to view, etc.
+
+Two reasons:
+
+1. This script does not save resources to which you do not have access.
+Pending further updates to the code, you need to manually ensure the script
+has downloaded all the resources from Canvas!
+
+2. Often professors will embed videos that require authentication to view, etc.
 At time of writing, this script does not handle such embeds.
 Please make sure you can view all resources offline without connecting to a server
 before calling your import done.
